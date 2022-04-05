@@ -1,0 +1,7 @@
+brew deps --tree --installed
+
+Remove each and every package installed using homebrew
+brew remove --force $(brew list --formula)
+
+brew uninstall --ignore-dependencies --force <packagename>
+
